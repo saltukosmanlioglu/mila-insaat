@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 
+import Main from "@/layout/main";
+
 const Home: NextPage = () => {
   return (
-    <div>
+    <Main>
       <div></div>
-    </div>
+    </Main>
   );
 };
 
