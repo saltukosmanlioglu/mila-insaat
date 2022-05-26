@@ -10,6 +10,18 @@ export const Wrapper = styled.div`
   gap: 30px;
 `;
 
-export const Card = styled.div<{ column: number }>`
-  border: 1px solid red;
+export const Pager = styled.div<{ isActive: boolean }>`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 16px;
+
+  button {
+    width: 8px;
+    height: 8px;
+    background-color: ${({ isActive }) => (isActive ? "#050505" : "#ced4da")};
+    transform: rotate(45deg);
+  }
 `;
