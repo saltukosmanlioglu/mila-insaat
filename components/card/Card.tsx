@@ -18,7 +18,13 @@ const Card: React.FunctionComponent<CardProps> = ({
   return (
     <Styled.Card>
       <Styled.Inclusive>
-        <Image alt={alt} layout={"fill"} objectFit="cover" src={image} />
+        <Image
+          alt={alt}
+          layout={"fill"}
+          objectFit="cover"
+          priority
+          src={image}
+        />
       </Styled.Inclusive>
       <Styled.CardBody>
         <p>{date}</p>

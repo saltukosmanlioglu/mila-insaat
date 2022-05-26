@@ -10,6 +10,8 @@ const Home: NextPage = () => {
     <Main>
       <div style={{ padding: 100 }}>
         <MultiSlider column={3} data={cardImage} />
+        <MultiSlider column={3} data={cardImage} />
+        <MultiSlider column={3} data={cardImage} />
       </div>
     </Main>
   );
