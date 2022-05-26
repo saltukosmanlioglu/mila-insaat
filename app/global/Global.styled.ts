@@ -79,6 +79,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: pLight;
+    
+    ::selection {
+      background-color: #000;
+      color: #fff;
+    }
   }
   
   body {

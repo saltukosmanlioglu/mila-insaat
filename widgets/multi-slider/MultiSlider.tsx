@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 
 import Card from "@/components/card";
 
@@ -9,22 +9,9 @@ const MultiSlider: React.FunctionComponent<MultiSliderProps> = ({
   column,
   data,
 }) => {
-  const [activePager, setActivePager] = useState<number>(0);
-
-  const wrapperRef = useRef<HTMLDivElement>(null);
-
-  const handlePagerClick = (index: number) => {
-    if (wrapperRef?.current) {
-      wrapperRef.current.scrollLeft += 100;
-    }
-    setActivePager(index);
-  };
-
-  console.log(wrapperRef);
-
   return (
     <Styled.MultiSlider>
-      <Styled.Wrapper ref={wrapperRef}>
+      <Styled.Wrapper>
         {data
           ? data.map((card, index) => (
               <Card
@@ -40,8 +27,8 @@ const MultiSlider: React.FunctionComponent<MultiSliderProps> = ({
           : null}
       </Styled.Wrapper>
       <Styled.Pager isActive={false}>
-        {data.slice(0, column).map((pager, index) => (
-          <button key={index} onClick={() => handlePagerClick(index)} />
+        {data.map((pager, index) => (
+          <button key={index} />
         ))}
       </Styled.Pager>
     </Styled.MultiSlider>
