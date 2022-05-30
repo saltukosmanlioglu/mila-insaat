@@ -84,6 +84,10 @@ const GlobalStyle = createGlobalStyle`
       background-color: #000;
       color: #fff;
     }
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
   
   body {

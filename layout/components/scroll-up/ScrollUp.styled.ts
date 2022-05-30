@@ -29,9 +29,28 @@ export const ScrollUp = styled.div`
       bottom: 0;
       right: 0;
     }
+
     to {
       right: 2.5rem;
       bottom: 2.5rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    right: 20px;
+    bottom: 20px;
+    animation: scrolUpMobile 0.3s;
+  }
+
+  @keyframes scrolUpMobile {
+    from {
+      bottom: 0;
+      right: 0;
+    }
+
+    to {
+      right: 20px;
+      bottom: 20px;
     }
   }
 `;

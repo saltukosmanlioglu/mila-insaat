@@ -1,4 +1,5 @@
 import { CardProps } from "@/components/card";
+import { CardImageProps } from "@/components/card-image";
 
 export const cardImage: CardProps[] = [
   {
@@ -27,5 +28,62 @@ export const cardImage: CardProps[] = [
     href: "/home",
     image: "/images/example3.jpeg",
     title: "Style over Substance",
+  },
+];
+
+export const galleryImage: Array<CardImageProps> = [
+  {
+    category: "Buildings",
+    href: "/home",
+    image: "/images/card-image1.jpg",
+    title: "Gedimino G",
+  },
+  {
+    category: "Architecture",
+    href: "/home",
+    image: "/images/card-image2.jpg",
+    title: "Introvert",
+  },
+  {
+    category: "Buildings",
+    href: "/home",
+    image: "/images/card-image3.jpg",
+    title: "Pensacola Cityblock",
+  },
+  {
+    category: "3D Modeling",
+    href: "/home",
+    image: "/images/card-image4.jpg",
+    title: "Hall University of CA",
+  },
+  {
+    category: "Landscape",
+    href: "/home",
+    image: "/images/card-image5.jpg",
+    title: "Helling Kors Kirke",
+  },
+  {
+    category: "Living Room",
+    href: "/home",
+    image: "/images/card-image6.jpg",
+    title: "P Representation",
+  },
+  {
+    category: "3D Modeling",
+    href: "/home",
+    image: "/images/card-image7.jpg",
+    title: "Perkins+Will Seattle",
+  },
+  {
+    category: "3D Modeling",
+    href: "/home",
+    image: "/images/card-image8.jpg",
+    title: "Dining Table",
+  },
+  {
+    category: "Landscape",
+    href: "/home",
+    image: "/images/card-image10.jpg",
+    title: "Doyle Chair",
   },
 ];

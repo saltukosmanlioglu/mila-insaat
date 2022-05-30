@@ -5,6 +5,7 @@ import Footer from "@/layout/components/footer";
 import Header from "@/layout/components/header";
 import ScrollUp from "@/layout/components/scroll-up";
 
+import * as Styled from "./Main.styled";
 import { MainProps } from "./types";
 
 const Main: React.FunctionComponent<MainProps> = ({ children, title }) => {
@@ -14,7 +15,7 @@ const Main: React.FunctionComponent<MainProps> = ({ children, title }) => {
         <title>Mila İnşaat {title}</title>
       </Head>
       <Header />
-      {children}
+      <Styled.Main>{children}</Styled.Main>
       <Footer />
       <ScrollUp />
     </React.Fragment>
