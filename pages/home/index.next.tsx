@@ -1,15 +1,15 @@
 import type { NextPage } from "next";
 
 import Main from "@/layout/main";
-import Gallery from "@/widgets/gallery";
-
-import { galleryImage } from "./constants";
+import Progress from "@/components/progress";
 
 const Home: NextPage = () => {
   return (
     <Main>
-      <div>
-        <Gallery gallery={galleryImage} />
+      <div style={{ width: "50%", gap: 20 }}>
+        <Progress percent="70" title="Illustration" />
+        <Progress percent="87" title="Interior Design" />
+        <Progress percent="60" title="Architecture" />
       </div>
     </Main>
   );
